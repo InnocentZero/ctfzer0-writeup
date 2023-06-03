@@ -247,8 +247,6 @@ from string import ascii_uppercase as uppercase
 
 string = input(&quot;Enter the string: &quot;)
 
-uppercase_rev = uppercase[::-1]
-
 decrypt = &quot;&quot;
 for i in string:
     if i in uppercase:
@@ -334,22 +332,6 @@ print(&quot;Flag: ctfZero{0verruL3_T#3_$ys+3m}&quot;)
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
