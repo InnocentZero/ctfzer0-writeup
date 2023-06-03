@@ -284,6 +284,7 @@ print(vigenere_decode(&quot;lemon&quot;, &quot;LXFOPVEFRNHR&quot;))
 <p>Check the magic bytes of the file if you are on Windows. Then append the required extension for filetype. In this case it was <code>mp4</code>. This lets you play it in any media player. The flag is in the video.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="jpeg-image"><a class="header" href="#jpeg-image">JPEG Image</a></h1>
 <p>Read the bytes of the file using <a href="https://sourceforge.net/projects/frhed/files/1.%20Stable%20Releases/1.6.0/">frhed</a> for windows and <code>hexdump</code> / <code>xxd</code> commands on linux.</p>
+<p>You will find a plaintext comment in the image bytes that gives you the flag.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="file-size"><a class="header" href="#file-size">File Size</a></h1>
 <p>Does this really need an explanation?</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="really-a-text-file"><a class="header" href="#really-a-text-file">Really a Text File?</a></h1>
@@ -332,6 +333,22 @@ print(&quot;Flag: ctfZero{0verruL3_T#3_$ys+3m}&quot;)
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

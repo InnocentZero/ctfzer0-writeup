@@ -146,6 +146,7 @@
                     <main>
                         <h1 id="jpeg-image"><a class="header" href="#jpeg-image">JPEG Image</a></h1>
 <p>Read the bytes of the file using <a href="https://sourceforge.net/projects/frhed/files/1.%20Stable%20Releases/1.6.0/">frhed</a> for windows and <code>hexdump</code> / <code>xxd</code> commands on linux.</p>
+<p>You will find a plaintext comment in the image bytes that gives you the flag.</p>
 
                     </main>
 
@@ -176,6 +177,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
