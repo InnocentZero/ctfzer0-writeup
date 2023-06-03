@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Random file - ctfZero_writeup</title>
+        <title>Challenge 4 - ctfZero_writeup</title>
 
 
         <!-- Custom HTML head -->
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> index</a></li><li class="chapter-item expanded affix "><li class="part-title">Cryptography</li><li class="chapter-item expanded "><a href="caesar_salad.html"><strong aria-hidden="true">2.</strong> Caesar Salad</a></li><li class="chapter-item expanded "><a href="xor_everything.html"><strong aria-hidden="true">3.</strong> XOR everything, shouldn't you?</a></li><li class="chapter-item expanded "><a href="im_committed.html"><strong aria-hidden="true">4.</strong> I'm committed, or am I?</a></li><li class="chapter-item expanded "><a href="ascii_wonders.html"><strong aria-hidden="true">5.</strong> ASCII Wonders!</a></li><li class="chapter-item expanded "><a href="xor_encryption.html"><strong aria-hidden="true">6.</strong> XOR Encryption</a></li><li class="chapter-item expanded "><a href="the_two_columns.html"><strong aria-hidden="true">7.</strong> The Two Columns</a></li><li class="chapter-item expanded "><a href="a_different_one.html"><strong aria-hidden="true">8.</strong> A different one</a></li><li class="chapter-item expanded "><a href="a_tough_nut.html"><strong aria-hidden="true">9.</strong> A tough nut</a></li><li class="chapter-item expanded affix "><li class="part-title">Forensics</li><li class="chapter-item expanded "><a href="random_file.html" class="active"><strong aria-hidden="true">10.</strong> Random file</a></li><li class="chapter-item expanded "><a href="jpeg_image.html"><strong aria-hidden="true">11.</strong> JPEG Image</a></li><li class="chapter-item expanded "><a href="file_size.html"><strong aria-hidden="true">12.</strong> File Size</a></li><li class="chapter-item expanded "><a href="really_a_text_file.html"><strong aria-hidden="true">13.</strong> Really a Text File?</a></li><li class="chapter-item expanded "><a href="qr_mania.html"><strong aria-hidden="true">14.</strong> QR Mania</a></li><li class="chapter-item expanded affix "><li class="part-title">Misc</li><li class="chapter-item expanded "><a href="atm.html"><strong aria-hidden="true">15.</strong> ATM</a></li><li class="chapter-item expanded "><a href="beat_the_system.html"><strong aria-hidden="true">16.</strong> Beat the System</a></li><li class="chapter-item expanded affix "><li class="part-title">Web Exp</li><li class="chapter-item expanded "><a href="chall_1.html"><strong aria-hidden="true">17.</strong> Challenge 1</a></li><li class="chapter-item expanded "><a href="chall_2.html"><strong aria-hidden="true">18.</strong> Challenge 2</a></li><li class="chapter-item expanded "><a href="chall_3.html"><strong aria-hidden="true">19.</strong> Challenge 3</a></li><li class="chapter-item expanded "><a href="chall_4.html"><strong aria-hidden="true">20.</strong> Challenge 4</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> index</a></li><li class="chapter-item expanded affix "><li class="part-title">Cryptography</li><li class="chapter-item expanded "><a href="caesar_salad.html"><strong aria-hidden="true">2.</strong> Caesar Salad</a></li><li class="chapter-item expanded "><a href="xor_everything.html"><strong aria-hidden="true">3.</strong> XOR everything, shouldn't you?</a></li><li class="chapter-item expanded "><a href="im_committed.html"><strong aria-hidden="true">4.</strong> I'm committed, or am I?</a></li><li class="chapter-item expanded "><a href="ascii_wonders.html"><strong aria-hidden="true">5.</strong> ASCII Wonders!</a></li><li class="chapter-item expanded "><a href="xor_encryption.html"><strong aria-hidden="true">6.</strong> XOR Encryption</a></li><li class="chapter-item expanded "><a href="the_two_columns.html"><strong aria-hidden="true">7.</strong> The Two Columns</a></li><li class="chapter-item expanded "><a href="a_different_one.html"><strong aria-hidden="true">8.</strong> A different one</a></li><li class="chapter-item expanded "><a href="a_tough_nut.html"><strong aria-hidden="true">9.</strong> A tough nut</a></li><li class="chapter-item expanded affix "><li class="part-title">Forensics</li><li class="chapter-item expanded "><a href="random_file.html"><strong aria-hidden="true">10.</strong> Random file</a></li><li class="chapter-item expanded "><a href="jpeg_image.html"><strong aria-hidden="true">11.</strong> JPEG Image</a></li><li class="chapter-item expanded "><a href="file_size.html"><strong aria-hidden="true">12.</strong> File Size</a></li><li class="chapter-item expanded "><a href="really_a_text_file.html"><strong aria-hidden="true">13.</strong> Really a Text File?</a></li><li class="chapter-item expanded "><a href="qr_mania.html"><strong aria-hidden="true">14.</strong> QR Mania</a></li><li class="chapter-item expanded affix "><li class="part-title">Misc</li><li class="chapter-item expanded "><a href="atm.html"><strong aria-hidden="true">15.</strong> ATM</a></li><li class="chapter-item expanded "><a href="beat_the_system.html"><strong aria-hidden="true">16.</strong> Beat the System</a></li><li class="chapter-item expanded affix "><li class="part-title">Web Exp</li><li class="chapter-item expanded "><a href="chall_1.html"><strong aria-hidden="true">17.</strong> Challenge 1</a></li><li class="chapter-item expanded "><a href="chall_2.html"><strong aria-hidden="true">18.</strong> Challenge 2</a></li><li class="chapter-item expanded "><a href="chall_3.html"><strong aria-hidden="true">19.</strong> Challenge 3</a></li><li class="chapter-item expanded "><a href="chall_4.html" class="active"><strong aria-hidden="true">20.</strong> Challenge 4</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -144,20 +144,31 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="random-file"><a class="header" href="#random-file">Random file</a></h1>
-<p>Check the magic bytes of the file if you are on Windows. Then append the required extension for filetype. In this case it was <code>mp4</code>. This lets you play it in any media player. The flag is in the video.</p>
+                        <h1 id="challenge-4"><a class="header" href="#challenge-4">Challenge 4</a></h1>
+<p>The webpage includes a JavaScript file called <code>guess2.js</code>. <code>guess2.js</code> is obscured using <a href="https://jsfuck.com/">JSFuck</a>.</p>
+<p>The way that JSFuck works is that it constructs a string using fucked-up JavaScript semantics, and then passes it to the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval"><code>eval</code></a> function.</p>
+<p>So after all the fucked-up JavaScript expressions are evaluated, you will eventually get something like this:</p>
+<pre><code class="language-js">eval(&quot;&lt;your original code&gt;&quot;)
+</code></pre>
+<p>Those two brackets over there are part of the original JSFuck as-is -- <code>guess.js</code> will be some thing like:</p>
+<pre><code>&lt;some expression that evalutes to eval&gt;(&lt;some expression that evaluates to your code&gt;) 
+</code></pre>
+<p>Now there are two ways to do this:</p>
+<ol>
+<li>You can try to isolate the expression inside those braces -- <code>guess2.js</code> ends in a <code>)</code>, find the opening <code>(</code> for that one (you can use <code>vim</code> to do this -- the <code>%</code> key on vim matches braces).</li>
+<li>You can exploit a loophole in how the code is written.</li>
+</ol>
+<p>The loophole here is that the code uses <a href="https://jquery.com/">jQuery</a> (this is the <code>&lt;script&gt;</code> included in the the <code>&lt;head&gt;</code> of the HTML document), so if you try to <code>eval</code> this code in a context where jQuery isn't available (like <a href="https://www.programiz.com/javascript/online-compiler/">an online executor</a>, or <a href="https://nodejs.org/en">node.js</a>), the debugger will throw an error which contains the code being executed:</p>
+<p><img src="https://i.imgur.com/OhTRJwH.png" alt="nodejs output" /></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="a_tough_nut.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="chall_3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="jpeg_image.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -165,13 +176,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="a_tough_nut.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="chall_3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="jpeg_image.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>
